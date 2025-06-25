@@ -9,7 +9,7 @@
 
 ## 🚀 Overview
 
-CloudyFL is a cloudlet-assisted **Federated Learning (FL)** framework for **on-device user behavior recognition** using wearable sensors. It enables **privacy-preserving** and **efficient learning** from distributed IoT data without sharing raw data.
+CloudyFL is a cloudlet-assisted **Federated Learning (FL)** framework for **on-device user behavior recognition** using wearable sensors. It enables **privacy-preserving** and **efficient learning** from distributed IoT data without sharing raw data.This is the replication of method used in cloudyFL paper.Main intention is to  understand the difference between FedRS and FedAvg.
 
 ---
 
@@ -63,6 +63,16 @@ CloudyFL is a cloudlet-assisted **Federated Learning (FL)** framework for **on-d
 10. Evaluate: Accuracy, Precision, Recall, F1-score
 
 ---
+## 📂 Project Structure
+
+project/
+├── data/ # Preprocessed UCI sensor data
+├── models/ # BiLSTM and Attention definitions
+├── zones/ # Client-specific (zone-wise) data splits
+├── train_local.py # Local training logic
+├── aggregate.py # FedAvg / FedRS implementation
+├── evaluation.py # Accuracy, Precision, F1-score computations
+└── main.py 
 
 ## 🔒 Privacy & Security
 
@@ -109,9 +119,11 @@ CloudyFL defends against gradient leakage using:
 
 ## 📚 Related Work
 
-- *CloudyFL: A Cloudlet-Based Federated Learning Framework* – Qingyuan Gong et al.
--*-FedML-HE: Efficient HE-Based FL System*
-  *Differential Privacy for Sensitive Health Data* – Choudhury et al.
+## 📚 Related Work
+
+- [CloudyFL: A Cloudlet-Based Federated Learning Framework](https://ieeexplore.ieee.org/document/9694135) – Qingyuan Gong et al.
+- [FedML-HE: Efficient HE-Based FL System](https://arxiv.org/abs/2106.07976)
+- [Differential Privacy for Sensitive Health Data](https://arxiv.org/abs/1812.01484) – Choudhury et al.
 
 ---
 
@@ -131,12 +143,13 @@ CloudyFL defends against gradient leakage using:
 - [`FedML-AI/FedML`](https://github.com/FedML-AI/FedML)
 
 ---
-
+## Dataset 
+['UCI DSA Dataset'](https://archive.ics.uci.edu/dataset/256/daily+and+sports+activities)
 ## Acknowledgements
 
 - Guide: **Dr. Deepak Mishra**, Avionics, IIST
 - Department: **Electronics & Communication**, NSSCE
-- Tools: UCI, PyTorch, OpenMined, Flower, FedML
+- Tools: UCI, PyTorch
 
 
 
