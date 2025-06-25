@@ -134,6 +134,15 @@ CloudyFL defends against gradient leakage using:
 - UCI HAR Dataset 📊
 
 ---
+## 🧪 Future Work
+
+As part of future work, I plan to extend this project by:
+- Integrating a **Transformer-based model (CATNet)** for better sequential feature extraction.
+- Applying **Differential Privacy using Opacus** to track the privacy budget (ε) across rounds.
+- Exploring **Knowledge Distillation** by combining teacher-student training with federated learning.
+
+This will help evaluate the **trade-off between accuracy and privacy** in real-world FL deployments.
+---
 
 ## 🌐 Repositories You Can Explore
 
